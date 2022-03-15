@@ -1,0 +1,66 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__box {
+  width: 350px;
+  display: flex;
+  border-radius: 1px;
+  border: 1px solid lightgray;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 6px;
+}
+
+.login__image {
+  margin: 22px auto 12px;
+}
+
+.login__form > .MuiInput-root,
+.MuiButton-root {
+  width: 100%;
+}
+
+.login__form > .MuiButton-root {
+  margin-top: 13px;
+}
+
+.login__divider {
+  margin: 10px 40px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__dividerLine {
+  height: 1px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.login__dividerText {
+  margin: 0 18px;
+}
+
+.login__signUp {
+  width: 350px;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.login__signUpText {
+  text-decoration: none;
+  color: #1976d2;
+}

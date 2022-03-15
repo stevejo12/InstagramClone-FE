@@ -1,0 +1,116 @@
+.popupImage__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popupImage__box {
+    background: white;
+    border-radius: 25px;
+    margin: 20px;
+
+    .popupImage__boxHeader {
+      position: relative;
+      padding: 20px;
+      border-bottom: 1px solid lightgray;
+
+      h1 {
+        margin: 0;
+        text-align: center;
+      }
+
+      .popupImage__backButton {
+        position: absolute;
+        top: 22px; // 20px margin 2px set;
+      }
+    }
+
+    // bottom div for upload image area
+    .popupImage__uploadImage {
+      width: calc(min(max(100vmin - 40px), 750px));
+      height: calc(min(max(100vmin - 40px), 750px));
+
+      .popupImage__dragArea {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .popupImage__dragAreaIcon > .MuiSvgIcon-root {
+          width: 50px;
+          height: 50px;
+          color: #1683ff;
+        }
+
+        .popupImage__dragAreaText {
+          font-size: 20px;
+          font-weight: 500;
+          color: #34495e;
+
+          .popupImage__dragAreaButton {
+            color: #1683ff;
+            cursor: pointer;
+          }
+        }
+
+        .popupImage__dragAreaSupport {
+          font-size: 12px;
+          color: gray;
+        }
+      }
+    }
+
+    // bottom div after uploaded image
+    .popupImage__postSetup {
+      width: min(calc(100vw - 40px), 1090px);
+      height: min(calc(100vh - 100px), 750px);
+
+      form {
+        display: flex;
+        flex-direction: row;
+
+        .popupImage__picture {
+          width: min(calc(100% - 340px), 750px);
+          height: min(calc(100vmin - 100px), 750px);
+        }
+
+        .popupImage__postData {
+          width: 340px;
+          padding: 20px;
+
+          .popupImage__userInfo {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+
+            .MuiAvatar-root {
+              margin: 0;
+              margin-right: 12px;
+            }
+          }
+
+          .popupImage__caption {
+            textarea {
+              font-size: 16px;
+              line-height: 1.5;
+              height: 168px !important;
+              resize: none;
+              padding: none;
+              border: none;
+              outline: none;
+            }
+          }
+
+          .MuiButton-root {
+            background: #1683ff;
+            color: #fffafa;
+          }
+        }
+      }
+    }
+  }
+}

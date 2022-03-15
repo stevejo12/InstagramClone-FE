@@ -1,0 +1,66 @@
+.register {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register__box {
+  width: 350px;
+  display: flex;
+  border-radius: 1px;
+  border: 1px solid lightgray;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 6px;
+}
+
+.register__image {
+  margin: 22px auto 12px;
+}
+
+.register__form > .MuiInput-root,
+.MuiButton-root {
+  width: 100%;
+}
+
+.register__form > .MuiButton-root {
+  margin-top: 13px;
+}
+
+.register__divider {
+  margin: 10px 40px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register__dividerLine {
+  height: 1px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.register__dividerText {
+  margin: 0 18px;
+}
+
+.register__signIn {
+  width: 350px;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.register__signInText {
+  text-decoration: none;
+  color: #1976d2;
+}

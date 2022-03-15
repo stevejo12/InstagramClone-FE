@@ -1,0 +1,68 @@
+.profile {
+  padding: 30px 20px 0;
+  margin: 0 auto;
+  max-width: 935px;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.profile__pictureContainer {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.profile__pictureContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile__info {
+  flex-grow: 2;
+  flex-basis: 30px;
+}
+
+.profile__infoUsername h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.profile__infoFollows > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profile__infoFollows > ul > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.profile__infoDescription h1 {
+  font-size: 16px;
+}
+
+.profile__posts {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgba(219, 219, 219);
+  padding-top: 50px;
+}
+
+.profile__post {
+  width: 293px;
+  height: 293px;
+  margin-right: 28px;
+}
+
+.profile__post > img {
+  width: 100%;
+  height: 100%;
+}

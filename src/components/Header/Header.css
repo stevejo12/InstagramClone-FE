@@ -1,0 +1,67 @@
+.header {
+  /* keep aspect ratio of the image the same */
+  object-fit: contain;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header__middle {
+  display: flex;
+  position: relative;
+  margin-top: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__search {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+}
+
+.header__searchIcon {
+  width: 20px !important;
+  height: 20px !important;
+  color: lightgray;
+}
+
+.header__input {
+  padding-left: 25px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.header__input:focus {
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right > .header__iconContainer:not(:first-child),
+.MuiAvatar-root {
+  margin-left: 20px;
+}
+
+.header__iconContainer,
+.MuiAvatar-root {
+  cursor: pointer;
+}
+
+.header__avatar {
+  width: 24px !important;
+  height: 24px !important;
+}

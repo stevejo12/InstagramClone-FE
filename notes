@@ -1,0 +1,10 @@
+ADDITIONAL PROBABLY AFTER ANOTHER PROJECT
+- Profile Page
+  -> Update Home Page post based on followed account only
+  -> Add follow button if the page is not the loggedin user.
+
+
+// changes that not pushed yet
+-> Validation check token (in Login => Redirect)
+-> Redux (show header state)
+-> Profile (Followers & Following FE & BE)
